@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derivative Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../images/derivation calc icon">
+    <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(','\\)'], ['$', '$']] },
+      svg: { fontCache: 'global' }
+    };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Derivative Calculator</h1>
+        <p>Enter an expression in terms of x</p>
+
+        <input id="expression" type="text" placeholder="Example: sin(x)*cos(x)/(e^x*ln(x))">
+        <button id="calcBtn">Calculate</button>
+
+        <div class="visual-box-wrap">
+            <h2 class="visual-title">This will be calculated:</h2>
+            <div class="visual-box">
+                <div id="visualization" class="visual-math">\(x\)</div>
+            </div>
+        </div>
+
+        <p id="error" class="error-message"></p>
+
+        <div id="results" class="results-section"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
