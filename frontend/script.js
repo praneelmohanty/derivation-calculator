@@ -1,5 +1,5 @@
-const API_URL = "http://127.0.0.1:5001/derivative";
-const PREVIEW_URL = "http://127.0.0.1:5001/preview";
+const API_URL = "https://derivation-calculator.onrender.com/derivative";
+const PREVIEW_URL = "https://derivation-calculator.onrender.com/preview";
 
 const input = document.getElementById("expression");
 const button = document.getElementById("calcBtn");
